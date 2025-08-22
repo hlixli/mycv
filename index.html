@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV – Hlib Suslov</title>
+  <style>
+    :root{
+      --bg:#f7f7f8; --fg:#0f172a; --muted:#64748b; --accent:#2563eb;
+      --chip-bg:#e2e8f0; --card:#ffffff; --border:#e5e7eb;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0b0f1a; --fg:#e5e7eb; --muted:#94a3b8; --accent:#60a5fa;
+             --chip-bg:#1f2937; --card:#111827; --border:#1f2937; }
+    }
+    *{ box-sizing:border-box }
+    html,body{ height:100% }
+    body{
+      margin:0; background:var(--bg); color:var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Noto Sans", Ubuntu, Arial, sans-serif;
+      line-height:1.55; font-size:16px;
+    }
+    a{ color:inherit }
+    .container{ max-width: 960px; margin: 0 auto; padding: 28px; }
+    .header{
+      display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; justify-content:space-between;
+      background:var(--card); padding:24px; border:1px solid var(--border);
+      border-radius:16px; box-shadow:0 1px 2px rgba(0,0,0,.04);
+    }
+    .title{ margin:0 0 4px; font-size: clamp(28px, 2.6vw + 16px, 42px); letter-spacing:.2px; }
+    .subtitle{ margin:2px 0 0; color:var(--muted); font-weight:600 }
+    .info{ display:grid; gap:8px; margin-top:12px }
+    .info-row{ display:flex; gap:10px; align-items:center; color:var(--muted) }
+    .info-row svg{ flex:0 0 18px }
+
+    .actions{ display:flex; gap:12px; margin-top:14px }
+    .btn{ cursor:pointer; border:1px solid var(--border); background:var(--card); color:var(--fg);
+          padding:10px 14px; border-radius:12px; font-weight:700;
+          transition: transform .06s ease, background .2s ease, border-color .2s ease; }
+    .btn-primary{ background:var(--accent); color:#fff; border-color:transparent }
+    .btn:hover{ transform:translateY(-1px) }
+
+    .two-col{ display:grid; grid-template-columns: 1.2fr .8fr; gap:24px; margin-top: 28px }
+
+    .section{ margin-top: 0; background:var(--card); border:1px solid var(--border); border-radius:16px; padding:20px 24px }
+    .section + .section{ margin-top: 28px }
+    .section h2{ margin:0 0 12px; font-size: 1.25rem }
+    .section p{ margin: 0 }
+
+    .list{ display:grid; gap:16px }
+    .item{ display:grid; grid-template-columns: 160px 1fr; gap:16px }
+    .period{ font-weight:700; color:var(--muted) }
+    .place{ font-weight:800 }
+    .role{ color:var(--muted); margin:2px 0 8px }
+    ul{ margin:8px 0 0 18px }
+
+    .chips{ display:flex; flex-wrap:wrap; gap:8px }
+    .chip{ background:var(--chip-bg); border:1px solid var(--border); padding:8px 10px; border-radius:999px; font-size:.95rem }
+
+    .lang{ display:grid; gap:12px }
+    .lang-row{ display:grid; grid-template-columns: 170px 1fr; align-items:center; gap:10px }
+    .progress{ height:10px; background:var(--chip-bg); border:1px solid var(--border); border-radius:999px; overflow:hidden }
+    .progress > span{ display:block; height:100%; background:var(--accent); width:75% }
+
+    footer{ text-align:center; color:var(--muted); margin: 24px 0 0; font-size:.95rem }
+
+    @media (max-width: 860px){ .item{ grid-template-columns:1fr } .two-col{ grid-template-columns: 1fr } }
+
+    @media print{
+      :root{ --bg:#fff; --card:#fff; --border:#e5e7eb; --fg:#000; --muted:#444 }
+      .actions{ display:none }
+      body{ background:#fff }
+      .container{ padding: 0 }
+      .section, .header{ border:none; box-shadow:none; border-radius:0; padding:0; margin:0 0 14px }
+      .section h2{ margin-top:12px }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hlib Suslov",
+    "email": "mailto:glebsuslov720@gmail.com",
+    "telephone": "+4740599184",
+    "birthDate": "2007-06-13",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kallumlia 16",
+      "postalCode": "1526",
+      "addressLocality": "Moss",
+      "addressCountry": "NO"
+    },
+    "knowsLanguage": ["Ukrainian", "English", "Norwegian"]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div>
+        <h1 class="title">Hlib Suslov</h1>
+        <div class="subtitle">Motivert og pliktoppfyllende student</div>
+        <div class="info" aria-label="Kontaktinformasjon">
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            <a href="mailto:glebsuslov720@gmail.com" rel="nofollow">glebsuslov720@gmail.com</a>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.2a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+4740599184" rel="nofollow">+47 405 99 184</a>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-5-5-8-8-8-11a8 8 0 1 1 16 0c0 3-3 6-8 11z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Kallumlia 16, 1526 Moss</span>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18"/><path d="M5 6h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M8 3v3M16 3v3"/></svg>
+            <span>Født: 13. juni 2007</span>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn" onclick="window.print()" aria-label="Last ned som PDF">Last ned som PDF</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="two-col">
+      <div>
+        <section class="section" aria-labelledby="about">
+          <h2 id="about">Sammendrag</h2>
+          <p>Jeg er en 18 år gammel gutt som er motivert for å jobbe og lære. Jeg er rask til å tilpasse meg nye oppgaver, liker å jobbe både fysisk og med data, og tar ansvar for det jeg gjør. Jeg er selvstendig, punktlig og ønsker å bidra der det trengs.</p>
+        </section>
+
+        <section class="section" aria-labelledby="exp">
+          <h2 id="exp">Arbeidserfaring</h2>
+          <div class="list">
+            <div class="item">
+              <div class="period">jan. 2022 – apr. 2024</div>
+              <div>
+                <div class="place">Invasport UKR · Ukraina</div>
+                <div class="role">Hovedassistent for det ukrainske paralympiske rolandslaget</div>
+                <ul>
+                  <li>Assisterte hovedtrener og landslaget i daglige oppgaver både på land og under trening.</li>
+                  <li>Bidro til forberedelser til konkurranser, utstyrshåndtering og praktisk støtte til utøvere med funksjonsnedsettelser.</li>
+                  <li>Arbeidet krevde ansvar, punktlighet og godt samarbeid med trenere og utøvere.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="period">apr. 2024 – sep. 2024</div>
+              <div>
+                <div class="place">Personlig trener</div>
+                <div class="role">Fitnessinstruktør</div>
+                <ul>
+                  <li>Utviklet treningsprogram og veiledet kunder i riktig teknikk.</li>
+                  <li>Ansvar for sikker bruk av utstyr og tilpasning av øvelser etter nivå og mål.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="edu">
+          <h2 id="edu">Utdanning</h2>
+          <div class="list">
+            <div class="item">
+              <div class="period">aug. 2025 – nå</div>
+              <div>
+                <div class="place">Kirkeparken VGS</div>
+                <div class="role">Informasjonsteknologi og medieproduksjon Vg1</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="period">sep. 2024 – nå</div>
+              <div>
+                <div class="place">Kyiv nasjonale økonomiske universitet (KNEU), Ukraina</div>
+                <div class="role">Bachelor i økonomi (påbegynt)</div>
+                <ul>
+                  <li>Første studieår med fokus på bedriftsøkonomi, regnskap og samfunnsøkonomi.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="period">sep. 2014 – jun. 2024</div>
+              <div>
+                <div class="place">Lise № 31, Dnipro, Ukraina</div>
+                <div class="role">Studieretning: Matematikk og fysikk</div>
+                <ul>
+                  <li>Fordypning i realfag og tekniske fag. Fullført 11 klasser.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <section class="section" aria-labelledby="lang">
+          <h2 id="lang">Språk</h2>
+          <div class="lang">
+            <div class="lang-row">
+              <div>Ukrainsk (morsmål)</div>
+              <div class="progress" aria-label="Ukrainsk nivå"><span style="width:100%"></span></div>
+            </div>
+            <div class="lang-row">
+              <div>Engelsk – veldig godt</div>
+              <div class="progress" aria-label="Engelsk nivå"><span style="width:85%"></span></div>
+            </div>
+            <div class="lang-row">
+              <div>Norsk – nybegynner</div>
+              <div class="progress" aria-label="Norsk nivå"><span style="width:30%"></span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="skills">
+          <h2 id="skills">Kompetanser</h2>
+          <div class="chips">
+            <span class="chip">Vedlikehold av grøntområde</span>
+            <span class="chip">Bruke håndverktøy</span>
+            <span class="chip">Bruke metallbearbeidingsverktøy</span>
+            <span class="chip">Kundeservice</span>
+            <span class="chip">Varepåfylling</span>
+            <span class="chip">Renholdsarbeid</span>
+            <span class="chip">Tåler fysisk arbeid</span>
+            <span class="chip">Google Workspace</span>
+            <span class="chip">Microsoft 365</span>
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS‑in‑JS</span>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="contact">
+          <h2 id="contact">Kontakt</h2>
+          <div class="info">
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              <a href="mailto:glebsuslov720@gmail.com" rel="nofollow">glebsuslov720@gmail.com</a>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.2a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+4740599184" rel="nofollow">+47 405 99 184</a>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-5-5-8-8-8-11a8 8 0 1 1 16 0c0 3-3 6-8 11z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Kallumlia 16, 1526 Moss</span>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <footer>CV oppdatert 22. august 2025</footer>
+  </div>
+</body>
+</html>
